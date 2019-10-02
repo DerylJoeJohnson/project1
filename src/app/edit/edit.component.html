@@ -1,0 +1,31 @@
+
+
+
+<app-header></app-header>
+
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let i of result;let j=index">
+      <form>
+
+        <br>
+        <div class="card" style="padding: 50px;">
+          <!-- <p style="text-align: center">
+            <img class="circle" src="http://localhost:8080/admin/view/{{i.image}}" height="200px" width="200px">
+          </p> -->
+          <h2 class="card-title text-center" style="font-family: Cambria ">{{i.subject}}</h2>
+          <div class="card-body">
+            <h4 class="card-text text-center" style="font-family: Cambria">{{i.board}} </h4>
+            <h5 class="card-text text-center" style="font-family: Cambria">{{i.class}} </h5>
+            <!-- <h6 class="card-text text-center"style="font-family: Cambria">price : ₹ </h6> -->
+            
+           <!-- <a (click)="detailView(i._id)" class="text-left btn btn-success">Details</a> -->
+            <input type="button" value="Delete" style="float: right;" class="btn btn-success" (click)="deletematerial(i._id)">
+          </div>
+        </div>
+        <hr>
+      </form>
+    </div>
+  </div>
+</div>
+ 

@@ -1,0 +1,35 @@
+<app-header></app-header>
+
+
+<form name="addForm">
+        <div class="form-group">
+            <label class="form-text">Subject</label>
+            <input type="text" [(ngModel)]="subject" name="subject" class="form-control" required>
+            <br>
+            <label class="form-text">Class</label>
+            <input type="text" [(ngModel)]="class" name="class" class="form-control" required>
+            
+            <br>
+            <label class="form-text">Boarrd</label>
+            <input type="text" [(ngModel)]="board" name="board" class="form-control" required>
+            <br>
+
+            <br>
+            <label class="form-text">Contents</label>
+            <input type="text" [(ngModel)]="contents" name="contents" class="form-control" required>
+            <br>
+            <br>
+            <label class="form-text">Study Material</label>
+            <input type="text" [(ngModel)]="det" name="det" class="form-control" required>
+            <br>
+
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button class="btn btn-success" (click)="add()" type="submit">Add details</button>
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+        </div>
+    </form>
